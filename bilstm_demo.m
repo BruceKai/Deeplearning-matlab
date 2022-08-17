@@ -6,7 +6,7 @@ clc,clear;
 %             length of time sequence.
 % trainY: an array with shape of (n,). n represents the number of training
 %            samples. 
-rootDir = 'data';
+rootDir = 'Deeplearning-matlab';
 trainingData = importdata(fullfile(rootDir,'train.mat'));
 trainX = trainingData.trainx;
 trainY = trainingData.trainy+1;
