@@ -1,7 +1,7 @@
 clc,clear;
 %% Load training datasets
 % rootDir: the root direction of the training data
-rootDir = 'data';
+rootDir = './data/train';
 imageDir = fullfile(rootDir,'img');
 labelDir = fullfile(rootDir,'lbl');
 classNames = ["background","foreground"];
@@ -13,7 +13,7 @@ labelDataSet = pixelLabelDatastore(labelDir,classNames,labelIDs);
 trainingDataSet = pixelLabelImageDatastore(imageDataSet,labelDataSet);
 
 %% Load validation datasets
-rootDir = 'data';
+rootDir = './data/val';
 imageDir = fullfile(rootDir,'img');
 labelDir = fullfile(rootDir,'lbl');
 classNames = ["background","foreground"];
